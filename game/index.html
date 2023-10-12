@@ -55,13 +55,13 @@
       var loaderUrl = buildUrl + "/Archcon scavenger.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/e02ad91e7cedb7ca42b9d20e4ddae6f1.data",
-        frameworkUrl: buildUrl + "/af7175ccf5d85623d85a13a776d1fa94.js",
-        codeUrl: buildUrl + "/369bea624743f5ab859a7f53f5d771c8.wasm",
+        dataUrl: buildUrl + "/Archcon scavenger.data",
+        frameworkUrl: buildUrl + "/Archcon scavenger.framework.js",
+        codeUrl: buildUrl + "/Archcon scavenger.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Capriccioso",
         productName: "ARCHconnect",
-        productVersion: "0.1.2",
+        productVersion: "0.0.3",
         showBanner: unityShowBanner,
       };
 
@@ -93,7 +93,7 @@
         canvas.style.height = "900px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/7f917d45f8df8137b0cf2cb7fc27255d.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/Archcon scavenger.jpg') center / cover";
       document.querySelector("#unity-loading-bar").style.display = "block";
 
       var script = document.createElement("script");
