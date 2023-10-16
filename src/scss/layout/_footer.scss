@@ -1,6 +1,6 @@
 .site-footer {
-	position: relative;
-	background: color(bg, 1i);
+	position: inherit;
+	background-color: #110930;
 
 	&::before {
 		content: '';
@@ -21,6 +21,10 @@
 		left: 0;
 		right: 0;
 	}
+
+    .footer-bg {
+        
+    }
 }
 
 .site-footer-bottom {
