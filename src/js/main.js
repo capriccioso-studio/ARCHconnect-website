@@ -179,3 +179,20 @@
     )
   })()
 }())
+
+const toggles = document.querySelectorAll('.faq-toggle')
+
+toggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    toggle.parentNode.classList.toggle('active')
+  })
+})
+
+// SOCIAL PANEL JS
+const floatingBtn = document.querySelector('.floatingBtn')
+const closeBtn = document.querySelector('.closeBtn')
+const socialPanelContainer = document.querySelector('.socialPanelContainer')
+
+floatingBtn.addEventListener('click', () => { socialPanelContainer.classList.toggle('visible') })
+
+closeBtn.addEventListener('click', () => { socialPanelContainer.classList.remove('visible') })

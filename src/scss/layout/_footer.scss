@@ -1,27 +1,4 @@
-.site-footer {
-	position: relative;
-	background: color(bg, 1i);
 
-	&::before {
-		content: '';
-		position: absolute;
-		top: -76px;
-		left: calc(50% - 360px);
-		width: 720px;
-		height: 291px;
-		background-image: url('../images/footer-bg.svg');
-		background-size: 720px 291px;
-		background-repeat: no-repeat;
-	}
-
-	.footer-particles-container {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-	}
-}
 
 .site-footer-bottom {
     @include font-size(8, mobile, true, true, true);

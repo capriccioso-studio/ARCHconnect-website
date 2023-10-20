@@ -123,7 +123,7 @@ h6,
 
 	h1, h2, h3, h4, h5, h6,
 	.h1, .h2, .h3, .h4, .h5, .h6 {
-		color: color(typography, 1i) !important;
+		color: #d6c692 !important;
 	}
 }
 
@@ -149,6 +149,7 @@ h1, h2,
 .h1, .h2 {
 	margin-top: 48px;
 	margin-bottom: 16px;
+	color: #d6c692;
 }
 
 h3,
@@ -166,6 +167,7 @@ h4, h5, h6,
 p {
 	margin-top: 0;
 	margin-bottom: 24px;
+	color: #d6c692;
 }
 
 dfn, cite, em, i {
