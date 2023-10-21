@@ -7709,6 +7709,11 @@ textarea.form-control-lg {
 
 .ms-auto {
   margin-left: auto !important;
+  text-align: center;
+}
+
+.ms-auto-custom {
+  text-align: center;
 }
 
 .p-0 {
@@ -8131,6 +8136,11 @@ textarea.form-control-lg {
 
 .text-opacity-100 {
   --bs-text-opacity: 1;
+}
+
+.purple-bg {
+  --bs-bg-opacity: 1;
+  background-color: #110930;
 }
 
 .bg-primary {
