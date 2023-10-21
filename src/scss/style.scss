@@ -7405,6 +7405,14 @@ textarea.form-control-lg {
   align-items: center !important;
 }
 
+.banner-header{
+  background-image: url(../images/banner.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .align-items-baseline {
   align-items: baseline !important;
 }
@@ -8041,7 +8049,7 @@ textarea.form-control-lg {
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: #d2c392 !important;
 }
 
 .text-success {
@@ -10835,12 +10843,19 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding-bottom: 6rem;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+
+.page-section .getstarted-subheading {
+  font-size: 1.25rem;
+  color: #d6c692;
+  text-align: center;
+}
+
 @media (min-width: 992px) {
   .page-section .page-section-heading {
     font-size: 3rem;
@@ -11001,7 +11016,15 @@ html {
     font-size: 1.5rem;
   }
 }
-.portfolio .portfolio-item {
+.getstarted {
+  background-image: url(../images/GetStartedWallpaper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.getstarted .getstarted-item {
   cursor: pointer;
   position: relative;
   display: block;
@@ -11009,7 +11032,7 @@ html {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.portfolio .portfolio-item .portfolio-item-caption {
+.getstarted .getstarted-item .getstarted-item-caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -11017,24 +11040,24 @@ html {
   opacity: 0;
   background-color: rgba(26, 188, 156, 0.9);
 }
-.portfolio .portfolio-item .portfolio-item-caption:hover {
+.getstarted .getstarted-item .getstarted-item-caption:hover {
   opacity: 1;
 }
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+.getstarted .getstarted-item .getstarted-item-caption .getstarted-item-caption-content {
   font-size: 1.5rem;
 }
 
-.portfolio-modal .btn-close {
+.getstarted-modal .btn-close {
   color: #1abc9c;
   font-size: 2rem;
   padding: 1rem;
 }
-.portfolio-modal .portfolio-modal-title {
+.getstarted-modal .getstarted-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
+  .getstarted-modal .getstarted-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
   }
