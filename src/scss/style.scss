@@ -504,6 +504,20 @@ progress {
   font-weight: bold;
 }
 
+.panel-group {
+  padding-top: 3rem;
+}
+
+.panel-default {
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #d2c392;
+}
+
+.panel-title {
+  color: #d2c392;;
+}
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;

@@ -7,9 +7,11 @@
 	<link rel="icon" type="image/png" href="dist/images/ArchConnect_Logo.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Bootstrap Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Core theme CSS >(includes Bootstrap)-->
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
@@ -113,7 +115,7 @@
                 <!-- portfolio Item 3-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <h2 class="page-section-heading text-uppercase" style="color: #d6c692;">summon your first icon!</h2>
-                    <p class="lead" style="color: #d6c692;">Take note:
+                    <p class="lead" style="text-align: left; color: #d6c692;">Take note:
                     <br> &#8226; There are four types of card rarity - R, SR, SSR AND UR</p>
                 </div>
             </div>
@@ -165,66 +167,106 @@
     </section>
     <!-- FAQ Section-->
     <section class="page-section purple-bg mb-0" id="FAQ">
-        <div class="container">
-            <div class="accordion w-100" id="basicAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-                      data-mdb-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Question #1
-                    </button>
-                  </h2>
-                  <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                    data-mdb-parent="#basicAccordion" style="">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default,
-                      until the collapse plugin adds the appropriate classes that we use to style each
-                      element. These classes control the overall appearance, as well as the showing and
-                      hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                      our default variables. It's also worth noting that just about any HTML can go within
-                      the <code>.accordion-body</code>, though the transition does limit overflow.
+        <div class="container ">
+            <h2 class="page-section-heading text-uppercase" style="color: #d6c692; text-align: center;">frequently asked questions (FAQ)</h2>
+            <div class="panel-group" id="faqAccordion">
+                <!-- Question 1 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                        <h3 class="panel-title">What exactly is the point of the App?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-                      data-mdb-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Question #2
-                    </button>
-                  </h2>
-                  <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-mdb-parent="#basicAccordion" style="">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                      until the collapse plugin adds the appropriate classes that we use to style each
-                      element. These classes control the overall appearance, as well as the showing and
-                      hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                      our default variables. It's also worth noting that just about any HTML can go within
-                      the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">ArchConnect is all about fun and enhancing the ArchCon experience! Our aim is to provide participants with an interactive way to be part of the event, 
+                                connecting with fellow attendees, artists, cosplayers, and tenants. We want to clarify that we're not using this platform for any data collection. 
+                                It's purely a tool for enjoyment and community-building. Your participation makes ArchConnect come alive, and we're excited to share this fun experience 
+                                with all of you at ArchCon!</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-                      data-mdb-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Question #3
-                    </button>
-                  </h2>
-                  <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-mdb-parent="#basicAccordion" style="">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                      until the collapse plugin adds the appropriate classes that we use to style each
-                      element. These classes control the overall appearance, as well as the showing and
-                      hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                      our default variables. It's also worth noting that just about any HTML can go within
-                      the <code>.accordion-body</code>, though the transition does limit overflow.
+                <!-- Question 2 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                        <h3 class="panel-title">What are the rights to the photos/data uploaded by the cosplayers?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
                     </div>
-                  </div>
+                    <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">NONE. We don't own anything the public uploads to our servers and are ready to remove them on request if they change their mind. 
+                                This is simply a fun platform that uses public-sourced info and generates cards out of it to play in gacha, and this small Cebu studio 
+                                has no intention of selling these cards as if they're our own.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <!-- Question 3 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+                        <h3 class="panel-title">What does Capriccioso gain from developing this app?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question2" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">Nothing monetary. We earn zero pesos from this. We want to make that very clear. That said, ARCHcon is kind enough to provide us with a <b class="card-info-bold">booth</b> and <b class="card-info-bold">x tickets</b> that allow us to move freely in the venue and provide support for this game during the event.
+                                <br><br>We're developing ArchConnect to put our <b class="card-info-bold">tiny</b>game development studio on the radar and announce to the world our capabilities as a team. We essentially want to challenge ourselves as a team by taking on this huge responsibility!
+                                <br><br><b class="card-info-bold">We're joining ARCHcon for the same reasons as any congoer:</b> have fun, meet the community, push beyond our comfort zone, and help out ARCHcon as a whole! 
+                                <br><br>Lastly, the rewards or incentives (if any) of playing the Archconnect game will all be provided by the ARCHcon team or anyone who wants to do their own thing on our gacha platform. Capriccioso is <b class="card-info-bold">not a sponsor</b>, and will not sponsor for anything other than the development of this game.
+                                <br><br>TL;DR this is just <b class="card-info-bold">exposure</b> for Capriccioso</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+                        <h3 class="panel-title">How is the RnG computed?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question3" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">A number is generated on the server to determine which card rarity you'll get. 
+                                <br><br>Afterwards, a 2nd number is generated on the server to determine which card under that rarity you will get.
+                                <br><br>These rng will be salted using a client nonce that we will not disclose and your userId. This is what the client will send to the server to generate the number. 
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 5 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
+                        <h3 class="panel-title">What are the card's % rates?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question4" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">Rare: 70%
+                                <br><br>Super Rare: 29.95%
+                                <br><br>Super Super Rare: 0.05%
+                                <br><br>Ultra Rare: 100% on gold QRs
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 6 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
+                        <h3 class="panel-title">What's your stance on multiple accounts?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question5" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">Not encouraged, but feel free to have multiple accounts if you want! For the prizes, only one account will be honored.  </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 7 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question6">
+                        <h3 class="panel-title">What's your stance on taking photos of the QR Codes?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question6" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">Definitely not encouraged, and this takes the fun out of ARCHconnect. But there isn't much we can do about it. If you see people do this, call them out!  
+                                <br><br>If you're planning to do this, you're no fun and Capriccioso team hopes you step on a lego
+                                <br><br>For the Gold QR codes, you will have to sign something so the sponsors know you've really been there - so don't even try!
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
