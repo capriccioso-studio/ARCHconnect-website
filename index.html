@@ -1,177 +1,295 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>ARCHConnect</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+	<link rel="icon" type="image/png" href="dist/images/ArchConnect_Logo.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Lilita+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Core theme CSS >(includes Bootstrap)-->
     <link rel="stylesheet" href="dist/css/style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 </head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-        <main>
-			<section class="hero text-center text-light">
-				<div class="hero-bg">
-					<div class="hero-particles-container">
-						<canvas id="hero-particles"></canvas>
-					</div>
-					<div class="container-sm">
-						<div class="hero-inner">
-							<div class="hero-copy">
-								<p style="visibility: hidden; padding-top: 350px;"></p>
-								<form class="hero-button">
-									<button formaction="https://docs.google.com/forms/d/e/1FAIpQLSfROS7YP24ufHzvFU3VXa_dI-lz7qrC-GXgXorqgAHnmZoT0Q/viewform?usp=sf_link" style="background-color: transparent; border: none;
-									outline: none; pointer-events: none;">
-										<img src="dist/images/becomeanicon.png" style="height: 9vh; visibility: hidden;">
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="hero-bg-2"></div>
-				<div class="FAQ">
-					<div class="container-sm">
-						<div class="cta-inner section-inner">
-							<div class="cta-header text-center">
-								<h2 class="section-title mt-0">FREQUENTLY ASKED QUESTIONS (FAQ)</h2>
-								<div class="faqs-container">
-									<div class="faq">
-										<h4 class="faq-title">
-											What exactly is the point of the App? 
-										</h4>
-										<p class="faq-text">
-											ArchConnect is all about fun and enhancing the ArchCon experience! Our aim is to provide participants with an interactive way to be part of the event, connecting with fellow attendees, artists, cosplayers, and tenants. We want to clarify that we're not using this platform for any data collection.  It's purely a tool for enjoyment and community-building. Your participation makes ArchConnect come alive, and we're excited to share this fun experience with all of you at ArchCon!
-										</p>
-										<button class="faq-toggle">
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-												<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-											</svg>
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-												<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-											</svg>
-										</button>
-									</div>
-									
-									<div class="faq">
-										<h4 class="faq-title">
-											What are the rights to the photos/data uploaded by the cosplayers?
-										</h4>
-										<p class="faq-text">
-											NONE. We don't own anything the public uploads to our servers and are ready to remove them on request if they change their mind. This is simply a fun platform that uses public-sourced info and generates cards out of it to play in gacha, and this small Cebu studio has no intention of selling these cards as if they're our own.
-										</p>
-										<button class="faq-toggle">
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-												<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-											</svg>
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-												<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-											</svg>
-										</button>
-									</div>
-									
-									<div class="faq">
-										<h4 class="faq-title">
-											What does Capriccioso gain from developing this app?
-										</h4>
-										<p class="faq-text">
-											Nothing monetary. We earn zero pesos from this. We want to make that very clear. That said, ARCHcon is kind enough to provide us with a <b>booth</b> and <b>x tickets</b> that allow us to move freely in the venue and provide support for this game during the event.
-											<br><br>We're developing ArchConnect to put our <b>tiny</b> game development studio on the radar and announce to the world our capabilities as a team. We essentially want to challenge ourselves as a team by taking on this huge responsibility!
-											<br><br>We're joining ARCHcon for the same reasons as any congoer: have fun, meet the community, push beyond our comfort zone, and help out ARCHcon as a whole! 
-											<br><br>Lastly, the rewards or incentives (if any) of playing the Archconnect game will all be provided by the ARCHcon team or anyone who wants to do their own thing on our gacha platform. Capriccioso is <b>not a sponsor</b>, and will not sponsor for anything other than the development of this game.
-											<br><br>TL;DR this is just <b>exposure</b> for Capriccioso
-											
-										</p>
-										<button class="faq-toggle">
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-												<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-											</svg>
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-												<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-											</svg>
-										</button>
-									</div>
-									
-									<div class="faq">
-										<h4 class="faq-title">
-											How is the RnG computed?
-										</h4>
-										<p class="faq-text">
-											A number is generated on the server to determine which card rarity you'll get. 
-											<br><br>Afterwards, a 2nd number is generated on the server to determine which card under that rarity you will get.
-											<br><br>These rng will be salted using a client nonce that we will not disclose and your userId. This is what the client will send to the server to generate the number.  											
-										</p>
-										<button class="faq-toggle">
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-												<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-											</svg>
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-												<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-											</svg>
-										</button>
-									</div>
-									
-									<div class="faq">
-										<h4 class="faq-title">
-											What are the card's % rates?
-										</h4>
-										<p class="faq-text">
-											Rare: 70%
-											<br><br>Super Rare: 29.95%
-											<br><br>Super Super Rare: 0.05%
-											<br><br>Ultra Rare: 100% on gold QRs											
-										</p>
-										<button class="faq-toggle">
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-												<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-											</svg>
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-												<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-											</svg>
-										</button>
-									</div>
-
-									<div class="faq">
-										<h4 class="faq-title">
-											What's your stance on taking photos of the QR Codes?
-										</h4>
-										<p class="faq-text">
-											Definitely not encouraged, and this takes the fun out of ARCHconnect. But there isn't much we can do about it. If you see people do this, call them out!  
-											<br><br>If you're planning to do this, you're no fun and Capriccioso team hopes you step on a lego 
-											<br><br>For the Gold QR codes, you will have to sign something so the sponsors know you've really been there - so don't even try!
-
-										</p>
-										<button class="faq-toggle">
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-												<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-											</svg>
-											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-												<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-											</svg>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-            </section>
-			</div>
-        </main>
-
-		<footer class="site-footer">
-			<div class="site-footer-top">
-				<section class="cta section text-light">
-					<div class="container-sm">
-						<img class="footer-bg" src="dist/images/footer.png" style="padding: 0px 70px;">
-					</div>
-				</section>
-			</div>
-        </footer>
-    </div>
-
-    <script src="dist/js/main.min.js"></script>
+<body id="page-top">
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="dist/images/ArchConnect_Logo.png" alt="ARCHConnectLogo" style="width: 20rem;"/>
+            <!-- Masthead Heading-->
+            
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <h1 class="masthead-heading text-uppercase mb-0">Connect, Collect, and Conquer with Archconnect!</h1>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Archconnect is a captivating gacha game app that takes players on an exciting journey through the world of collectible cards. 
+                The pinnacle of achievement is the elusive, most rare card, which unlocks a promising and enticing prize for the fortunate participant who manages to obtain it.</p>
+            <!-- ARCHConnect Form Button-->
+            <form>
+                <button formaction="https://docs.google.com/forms/d/e/1FAIpQLSfROS7YP24ufHzvFU3VXa_dI-lz7qrC-GXgXorqgAHnmZoT0Q/viewform?usp=sf_link" style="background-color: transparent; border: none;
+                    outline: none; pointer-events: none;">
+                    <img src="dist/images/becomeanicon.png" style="height: 9vh; visibility: hidden;">
+                </button>
+            </form>
+        </div>
+    </header>
+    <!-- Get Started Section-->
+    <section class="page-section getstarted" id="getstarted">
+        <div class="container d-flex align-items-center banner-header flex-column" style="height: 1000px;">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="padding-top: 4rem; ">Howdy! Welcome <br>to Archonnect<br>
+                    faq</h2>
+                <p class="getstarted-subheading font-weight-light mb-0" style="padding: 1rem 0;">Get to know the game's mechanics, have fun and enjoy!</p>
+            <!-- Get Started Button-->
+            <form href="#">
+                <button formaction="#Part 1" style="background-color: transparent; border: none; outline: none;">
+                    <img src="dist/images/GetStarted.png" style="height: 9vh;">
+                </button>
+            </form>
+            <!-- Phone 1 Image -->
+            <img class="masthead-avatar" src="dist/images/phone1.png" alt="phone1" style="width: 17rem; padding: 1rem;"/>
+        </div>
+    </section>
+    <!-- Part 1 Section-->
+    <section class="page-section purple-bg text-white mb-0" id="Part 1">
+        <div class="container">
+            <!-- Part 1 Section Heading-->
+            <img class="masthead-avatar" src="dist/images/border1.png" alt="border1" style="width: 100%; padding: 1rem;"/>
+            <!-- Part 1 Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <img class="masthead-avatar" src="dist/images/phone2.png" alt="phone2" style="width: 20rem; "/>
+                </div>
+                <div class="col-lg-4 me-auto" style="width: 600px;">
+                    <h2 class="page-section-heading text-uppercase" style="color: #d6c692;">find the qr codes that is scattered all over the archcon venue</h2>
+                    <p class="lead" style="color: #d6c692;">Take note:
+                    <br> &#8226; Venue QR Codes are QRs that can be scanned exactly once per account.
+                    <br> &#8226; These QR codes can be scanned exactly once. It cannot be scanned again, even using other accounts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Part 2 Section-->
+    <section class="page-section purple-bg text-white mb-0" id="Part 2">
+        <div class="container">
+            <!-- Part 2 Section Heading-->
+            <img class="masthead-avatar" src="dist/images/border2.png" alt="border2" style="width: 100%; padding: 1rem;"/>
+            <!-- Part 2 Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <h2 class="page-section-heading text-uppercase" style="text-align: left; color: #d6c692;">sign in using your google account and get your first archcoin!</h2>
+                    <p class="lead" style="text-align: left; color: #d6c692;">Take note:
+                    <br> &#8226; 1 Archcoin is equivalent to 1 roll.
+                    <br> &#8226; QR Codes may reward you with different number of Archcoins</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <img class="masthead-avatar" src="dist/images/phone3.png" alt="phone3" style="width: 30rem; "/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Part 3 Section-->
+    <section class="page-section purple-bg text-white mb-0" id="Part 3">
+        <div class="container">
+            <!-- Part 3 Section Heading-->
+            <img class="masthead-avatar" src="dist/images/border3.png" alt="border3" style="width: 100%; padding: 1rem;"/>
+            <!-- Part 3 Section Content-->
+            <!-- portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <img class="masthead-avatar" src="dist/images/phone4.png" alt="phone4" style="width: 30rem; "/>
+                </div>
+                <!-- portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5" style="width: 200px;">
+                    
+                </div>
+                <!-- portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <h2 class="page-section-heading text-uppercase" style="text-align: left; color: #d6c692;">summon your first icon!</h2>
+                    <p class="lead" style="text-align: left; color: #d6c692;">Take note:
+                    <br> &#8226; There are four types of card rarity - R, SR, SSR AND UR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Card Info Section-->
+    <section class="page-section purple-bg mb-0" id="cardinfo">
+        <div class="container">
+            <!-- Card Info Section Heading-->
+            <img class="masthead-avatar" src="dist/images/niceborder.png" alt="niceborder" style="width: 100%; padding: 1rem;"/>
+            <h2 class="page-section-heading text-uppercase" style="text-align: center; color: #d6c692;">CARD TYPE INFO</h2>
+            <!-- Card Info Section Content-->
+            <!-- portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- portfolio Item 1-->
+                <div class="col-md-6 col-lg-3 mb-5 card-info">
+                    <img class="masthead-avatar" src="dist/images/card1.png" alt="card1" style="padding-top: 2rem;"/>
+                    <h2 class="page-section-card-info text-uppercase">Rare (R)</h2>
+                    <p class="card-info-lead"><b class="card-info-bold">Description:</b> High chance of getting pulled, and anyone can join!
+                        <br><b class="card-info-bold">Chance:</b> 70%
+                        <br><b class="card-info-bold">Supply:</b> UNLIMITED</p>
+                </div>
+                <!-- portfolio Item 2-->
+                <div class="col-md-6 col-lg-3 mb-5 card-info">
+                    <img class="masthead-avatar" src="dist/images/card2.png" alt="card2" style="padding-top: 2rem;"/>
+                    <h2 class="page-section-card-info text-uppercase">Super rare (sr)</h2>
+                    <p class="card-info-lead"><b class="card-info-bold">Description:</b> Slightly lower chances of getting pulled, and anyone can join!
+                        <br><b class="card-info-bold">Chance:</b> 29.95%
+                        <br><b class="card-info-bold">Supply:</b> UNLIMITED</p>
+                </div>
+                <!-- portfolio Item 3-->
+                <div class="col-md-6 col-lg-3 mb-5 card-info">
+                    <img class="masthead-avatar" src="dist/images/card3.png" alt="card3" style="padding-top: 2rem;"/>
+                    <h2 class="page-section-card-info text-uppercase">Super super rare (ssr)</h2>
+                    <p class="card-info-lead"><b class="card-info-bold">Description:</b> These cards are created only upon request, and will generally have a reward when someone gets them. Usually these will be limited to 4 cards total, 5 cards total, etc. 
+                        <br><b class="card-info-bold">Chance:</b> 0.05%, Pity System
+                        <br><b class="card-info-bold">Supply:</b> VERY LIMITED</p>
+                </div>
+                <!-- portfolio Item 4-->
+                <div class="col-md-6 col-lg-3 mb-5 card-info">
+                    <img class="masthead-avatar" src="dist/images/card4.png" alt="card4" style="padding-top: 2rem;"/>
+                    <h2 class="page-section-card-info text-uppercase">Ultra rare (ur)</h2>
+                    <p class="card-info-lead"><b class="card-info-bold">Description:</b> These cards will only be created for gold sponsors and can only be pulled by using GOLD QR CODES. Gold QR Codes give 10 rolls. It will give 9 cards from the lower rarities, and a 100% chance of an ULTRA RARE CARD
+                        <br><b class="card-info-bold">Chance:</b> 100% on gold QRs
+                        <br><b class="card-info-bold">Supply:</b> UNLIMITED</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section-->
+    <section class="page-section purple-bg mb-0" id="FAQ">
+        <div class="container ">
+            <h2 class="page-section-heading text-uppercase" style="color: #d6c692; text-align: center;">frequently asked questions (FAQ)</h2>
+            <div class="panel-group" id="faqAccordion">
+                <!-- Question 1 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                        <h3 class="panel-title">What exactly is the point of the App?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">ArchConnect is all about fun and enhancing the ArchCon experience! Our aim is to provide participants with an interactive way to be part of the event, 
+                                connecting with fellow attendees, artists, cosplayers, and tenants. We want to clarify that we're not using this platform for any data collection. 
+                                It's purely a tool for enjoyment and community-building. Your participation makes ArchConnect come alive, and we're excited to share this fun experience 
+                                with all of you at ArchCon!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                        <h3 class="panel-title">What are the rights to the photos/data uploaded by the cosplayers?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">NONE. We don't own anything the public uploads to our servers and are ready to remove them on request if they change their mind. 
+                                This is simply a fun platform that uses public-sourced info and generates cards out of it to play in gacha, and this small Cebu studio 
+                                has no intention of selling these cards as if they're our own.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+                        <h3 class="panel-title">What does Capriccioso gain from developing this app?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question2" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">Nothing monetary. We earn zero pesos from this. We want to make that very clear. That said, ARCHcon is kind enough to provide us with a <b class="card-info-bold">booth</b> and <b class="card-info-bold">x tickets</b> that allow us to move freely in the venue and provide support for this game during the event.
+                                <br><br>We're developing ArchConnect to put our <b class="card-info-bold">tiny</b>game development studio on the radar and announce to the world our capabilities as a team. We essentially want to challenge ourselves as a team by taking on this huge responsibility!
+                                <br><br><b class="card-info-bold">We're joining ARCHcon for the same reasons as any congoer:</b> have fun, meet the community, push beyond our comfort zone, and help out ARCHcon as a whole! 
+                                <br><br>Lastly, the rewards or incentives (if any) of playing the Archconnect game will all be provided by the ARCHcon team or anyone who wants to do their own thing on our gacha platform. Capriccioso is <b class="card-info-bold">not a sponsor</b>, and will not sponsor for anything other than the development of this game.
+                                <br><br>TL;DR this is just <b class="card-info-bold">exposure</b> for Capriccioso</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+                        <h3 class="panel-title">How is the RnG computed?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question3" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">A number is generated on the server to determine which card rarity you'll get. 
+                                <br><br>Afterwards, a 2nd number is generated on the server to determine which card under that rarity you will get.
+                                <br><br>These rng will be salted using a client nonce that we will not disclose and your userId. This is what the client will send to the server to generate the number. 
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 5 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
+                        <h3 class="panel-title">What are the card's % rates?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question4" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">Rare: 70%
+                                <br><br>Super Rare: 29.95%
+                                <br><br>Super Super Rare: 0.05%
+                                <br><br>Ultra Rare: 100% on gold QRs
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 6 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
+                        <h3 class="panel-title">What's your stance on multiple accounts?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question5" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">Not encouraged, but feel free to have multiple accounts if you want! For the prizes, only one account will be honored.  </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 7 -->
+                <div class="panel panel-default ">
+                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question6">
+                        <h3 class="panel-title">What's your stance on taking photos of the QR Codes?<i class="bi bi-chevron-down" style="float: right;"></i></h3>
+                    </div>
+                    <div id="question6" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p class="card-info-lead">Definitely not encouraged, and this takes the fun out of ARCHconnect. But there isn't much we can do about it. If you see people do this, call them out!  
+                                <br><br>If you're planning to do this, you're no fun and Capriccioso team hopes you step on a lego
+                                <br><br>For the Gold QR codes, you will have to sign something so the sponsors know you've really been there - so don't even try!
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer footer-bg text-center">
+        <div class="container">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="masthead-avatar mb-5" src="dist/images/capxarch.png" alt="capxarch.png" style="width: 60%;"/>
+                <!-- Icon Divider-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/capriccioso.studio"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://capriccioso.studio/?v=ef2cab854a9f"><i class="fa fa-globe"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://gamejolt.com/@CapricciosoStudio">
+                        <svg style="color: #d2c392" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Game Jolt</title><path d="M6.353 0v2.824H4.94v2.823H3.53v2.824H2.118v2.823H.706v2.824h8.47v2.823H7.765v2.824H6.353v2.823h1.412v-1.412h1.411v-1.411h1.412v-1.412H12V16.94h1.412v-1.41h1.412v-1.411h1.411v-1.412h1.412v-1.412h1.412V9.882h1.412V8.471h1.411V7.059h-4.235V5.647h1.412V4.235h1.412V2.824h1.411V1.412h1.412V0zm0 22.588H4.94V24h1.412zM7.765 2.824h9.882v1.411h-1.412v1.412h-1.411V7.06h-1.412v1.41H12v1.411h1.412v1.412H12V9.882h-1.412v1.412H9.176V9.882H7.765v1.412H6.353V9.882H4.94V8.471h1.412V5.647h1.412zM6.353 8.47v1.411h1.412v-1.41zm2.823 1.411h1.412v-1.41H9.176zm5.648 0h1.411v1.412h-1.411Z" fill="white"></path></svg>
+                    </a>
+                    
+                </div>
+                <!-- Footer Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0" style="padding-top: 1rem; color: #d2c392;">© 2023, Capriccioso Game Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
