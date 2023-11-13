@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/icon-gen.loader.js";
+      var loaderUrl = buildUrl + "/build.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/icon-gen.data",
-        frameworkUrl: buildUrl + "/icon-gen.framework.js",
-        codeUrl: buildUrl + "/icon-gen.wasm",
+        dataUrl: buildUrl + "/build.data",
+        frameworkUrl: buildUrl + "/build.framework.js",
+        codeUrl: buildUrl + "/build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Capriccioso",
         productName: "ARCHconnect",
@@ -93,7 +93,7 @@
         canvas.style.height = "900px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/icon-gen.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/build.jpg') center / cover";
       document.querySelector("#unity-loading-bar").style.display = "block";
 
       var script = document.createElement("script");
