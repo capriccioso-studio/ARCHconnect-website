@@ -6,7 +6,7 @@
     <title>Unity Web Player | ARCHconnect</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=600 height=900 tabindex="-1" style="width: 600px; height: 900px; background: url('Build/Archcon scavenger.jpg.unityweb') center / cover"></canvas>
+    <canvas id="unity-canvas" width=600 height=900 tabindex="-1" style="width: 600px; height: 900px; background: url('Build/Archcon scavenger.jpg') center / cover"></canvas>
     <script src="Build/Archcon scavenger.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Archcon scavenger.data.unityweb",
-        frameworkUrl: "Build/Archcon scavenger.framework.js.unityweb",
-        codeUrl: "Build/Archcon scavenger.wasm.unityweb",
+        dataUrl: "Build/Archcon scavenger.data",
+        frameworkUrl: "Build/Archcon scavenger.framework.js",
+        codeUrl: "Build/Archcon scavenger.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Capriccioso",
         productName: "ARCHconnect",
